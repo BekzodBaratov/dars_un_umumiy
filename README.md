@@ -1,0 +1,1 @@
+# dars_un_umumiy
