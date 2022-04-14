@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(146, 107, 253) 80%,
+    rgb(86, 58, 161)
+  );
+  overflow: hidden;
+}
+.btn {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: blueviolet;
+  border-radius: 5rem;
+  font-size: 2rem;
+  color: white;
+}
+.vaqt {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: rgb(228, 1, 1);
+  box-shadow: 0 350px 60px -10px rgba(0, 0, 0, 0.226);
+}
+
+.va {
+  text-shadow: 0 0 8px rgb(204, 12, 12);
+  margin: 0 2%;
+  width: 20%;
+  display: inline-block;
+  font-family: sans-serif;
+  text-align: right;
+}
+.clock {
+  display: flex;
+  gap: 30px;
+}
+.div {
+  position: relative;
+}
+.line {
+  width: 1px;
+  height: 200px;
+  background-color: silver;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: silver;
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+}
+.leftCLock {
+  transform-origin: top;
+  animation: leftClock 2s infinite;
+}
+@keyframes leftClock {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+  25% {
+    transform: rotate(30deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+.rightClock {
+  transform-origin: top;
+  animation: rightClock 2s infinite;
+}
+@keyframes rightClock {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.miniArrows {
+  transform-origin: top;
+  animation: miniArrows 2s infinite;
+}
+@keyframes miniArrows {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+  25% {
+    transform: rotate(1deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#canvas {
+  border: 2px solid #333;
+  width: 300px;
+  height: 150px;
+}
