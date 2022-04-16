@@ -1422,3 +1422,61 @@ setInterval(function () {
 // }
 // timeConversion("07:05:45PM");
 //////////////////////////////////////////////////////
+// function getMoneySpent(keyboards, drives, b) {
+//   let qush = 0;
+//   let qush1 = 0;
+//   for (let el of keyboards) {
+//     for (let el2 of drives) {
+//       qush = el + el2;
+//       // console.log(qush);
+//       if (qush1 < qush && qush < b + 1) {
+//         qush1 = qush;
+//       }
+//     }
+//   }
+//   if (qush1 == 0) {
+//     return -1;
+//   }
+//   console.log(qush1);
+//   return qush1;
+// }
+
+// let arr1 = [3, 1];
+// let arr2 = [5, 2, 8];
+// let b = 10;
+// getMoneySpent(arr1, arr2, b);
+///////////////////////////////////////////////////////////
+// function gradingStudents(grades) {
+//   let arr = [];
+//   grades.forEach((grades) => {
+//     if (grades % 5 > 2 && grades > 37) {
+//       grades = Math.floor(grades / 5) * 5 + 5;
+//     } else if (grades <= 37) {
+//       grades = grades;
+//     }
+//     arr.push(grades);
+//   });
+//   return arr;
+// }
+// console.log(gradingStudents([73, 67, 38, 33]));
+////////////////////////////////////////////////////////
+// console.log();
+// function beautifulDays(i, j, k) {
+//   let z = 0;
+//   let f;
+//   let butun = 0;
+
+//   for (let n = i; n <= j; n++) {
+//     z = String(n).split("");
+
+//     for (let m = 0; m < z.length - 1; m++) {
+//       f = (n - Number(z[z.length - m - 1] + z[m])) / k;
+//     }
+//     if (Number.isInteger(f)) {
+//       butun++;
+//     }
+//   }
+//   return butun;
+// }
+// console.log(beautifulDays(200, 201, 100));
+///////////////////////////////////////////////////////////
